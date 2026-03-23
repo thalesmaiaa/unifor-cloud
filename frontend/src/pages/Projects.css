@@ -1,0 +1,97 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.page-header h1 {
+  font-size: 1.5rem;
+  color: var(--gray-900);
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters input,
+.filters select {
+  max-width: 300px;
+}
+
+.form-card {
+  margin-bottom: 1.5rem;
+}
+
+.form-card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1rem;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.project-item-header h3 {
+  font-size: 1rem;
+  color: var(--gray-900);
+}
+
+.project-item-header a {
+  text-decoration: none;
+}
+
+.project-item-header a:hover h3 {
+  color: var(--primary);
+}
+
+.project-item-desc {
+  color: var(--gray-500);
+  font-size: 0.85rem;
+  flex: 1;
+}
+
+.project-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--gray-100);
+}
+
+.task-count {
+  font-size: 0.8rem;
+  color: var(--gray-400);
+}
+
+.project-actions {
+  display: flex;
+  gap: 0.5rem;
+}
