@@ -38,7 +38,7 @@ export default function Register() {
       <div className="auth-card">
         <div className="auth-header">
           <h1>📋 ProjectManager</h1>
-          <p>Create a new account</p>
+          <p>Create a new account 2</p>
         </div>
 
         {error && <div className="error-msg">{error}</div>}
