@@ -25,6 +25,12 @@ class Settings:
         "CORS_ORIGINS", "http://localhost:5173,http://localhost:3000"
     ).split(",")
 
+    WEBAPP_URL: str = os.getenv("WEBAPP_URL", "")
+
+    def __init__(self):
+        if self.WEBAPP_URL and self.WEBAPP_URL not in self.CORS_ORIGINS:
+            self.CORS_ORIGINS = self.CORS_ORIGINS + [self.WEBAPP_URL]
+
     FIRST_ADMIN_EMAIL: str = os.getenv("FIRST_ADMIN_EMAIL", "admin@example.com")
     FIRST_ADMIN_PASSWORD: str = os.getenv("FIRST_ADMIN_PASSWORD", "admin123")
 
